@@ -1,0 +1,45 @@
+.table_main {
+    width: 100%;
+    position: relative;
+    border-radius: calc(1rem + .3vw);
+    border-collapse: collapse;
+    border-style: hidden;
+    box-shadow: 0 0 0 1px var(--grey_1);
+
+    p{
+        font-family: var(--noto-geo) !important;
+    }
+
+    .head {
+        border-radius: calc(1rem + 1vw);
+        overflow: hidden;
+        background-color: rgba($color: white, $alpha: .4);
+        backdrop-filter: blur(10px);
+        position: sticky;
+        top: 0;
+
+        font-family: var(--inter) var(--noto-geo);
+
+        th {
+            width: 20%;
+            padding: calc(1rem + .3vw);
+        }
+    }
+
+    // tr:first-child {
+    //     border-radius: calc(1rem + .3vw) calc(1rem + .3vw) 0 0;
+    // }
+
+    .body {
+    }
+
+    .row {
+        &:nth-child(2n) {
+            background-color: var(--grey_3);
+        }
+
+        p{
+            padding: calc(.3rem + .2vw) calc(1rem + .3vw);
+        }
+    }
+}
